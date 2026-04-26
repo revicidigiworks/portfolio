@@ -14,8 +14,7 @@ import paket from "../assets/images/paketumroh.png";
 
 import poster1 from "../assets/images/poster1.png";
 import poster2 from "../assets/images/poster2.png";
-import poster3 from "../assets/images/poster3.png";
-import poster4 from "../assets/images/poster4.png";
+import poster3 from "../assets/images/poster3.jpeg";
 
 import logo from "../assets/images/design4.png";
 import banner from "../assets/images/design5.png";
@@ -25,7 +24,7 @@ import promo1 from "../assets/images/promo1.png";
 
 const designs = [
   { title: "T-Shirt RKKW", category: "Apparel", image: kaos1 },
-  { title: "T-Shirt Berkah Muara Farm, Sleman Yogyakarta", category: "Apparel", image: kao2 },
+  { title: "T-Shirt Berkah Muara Farm, Sleman Yogyakarta", category: "Apparel", image: kaos2 },
   { title: "Footbal Jersey FC LONA, Sulawesi Selatan", category: "Apparel", image: kaos3 },
   { title: "Footbal Jersey Concept 3", category: "Apparel", image: kaos4 },
 
@@ -37,7 +36,6 @@ const designs = [
   { title: "Poster Design 1", category: "Poster", image: poster1 },
   { title: "Poster Design 2", category: "Poster", image: poster2 },
   { title: "Poster Design 3", category: "Poster", image: poster3 },
-  { title: "Poster Design 4", category: "Poster", image: poster4 },
 
   { title: "Logo Concept", category: "Branding", image: logo },
   { title: "Product Banner", category: "Marketing", image: banner },
