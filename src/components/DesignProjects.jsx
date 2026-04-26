@@ -1,16 +1,49 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import kaos1 from "../assets/images/kaos1.png";
+import kaos2 from "../assets/images/kaos2.png";
+import kaos3 from "../assets/images/kaos3.png";
+import kaos4 from "../assets/images/kaos4.png";
+
+import info1 from "../assets/images/infografis1.png";
+import info2 from "../assets/images/infografis2.png";
+import info3 from "../assets/images/infografis3.png";
+
+import paket from "../assets/images/paketumroh.png";
+
+import poster1 from "../assets/images/poster1.png";
+import poster2 from "../assets/images/poster2.png";
+import poster3 from "../assets/images/poster3.png";
+import poster4 from "../assets/images/poster4.png";
+
+import logo from "../assets/images/design4.png";
+import banner from "../assets/images/design5.png";
+import yt from "../assets/images/design6.png";
+
+import promo1 from "../assets/images/promo1.png";
+
 const designs = [
-  { title: "T-Shirt Berkah Muara Farm Yogyakarta", category: "Apparel", image: "/src/assets/images/kaos2.png" },
-  { title: "Info Grafis - Idul Fitri", category: "Social Media", image: "/src/assets/images/infografis1.png" },
-  { title: "Promo Umroh", category: "Marketing", image: "/src/assets/images/infografis2.png" },
-  { title: "Paket Umroh", category: "Social Media", image: "/src/assets/images/paketumroh.png" },
-  { title: "Education Umrah", category: "Social Media", image: "/src/assets/images/infografis3.png" },
-  { title: "Poster Design", category: "Poster", image: "/src/assets/images/poster1.png" },
-  { title: "Logo Concept", category: "Branding", image: "/src/assets/images/design4.png" },
-  { title: "Product Banner", category: "Marketing", image: "/src/assets/images/design5.png" },
-  { title: "YouTube Thumbnail", category: "Content", image: "/src/assets/images/design6.png" },
+  { title: "T-Shirt RKKW", category: "Apparel", image: kaos1 },
+  { title: "T-Shirt Berkah Muara Farm, Sleman Yogyakarta", category: "Apparel", image: kao2 },
+  { title: "Footbal Jersey FC LONA, Sulawesi Selatan", category: "Apparel", image: kaos3 },
+  { title: "Footbal Jersey Concept 3", category: "Apparel", image: kaos4 },
+
+  { title: "Info Grafis - Idul Fitri", category: "Social Media", image: info1 },
+  { title: "Promo Umroh", category: "Marketing", image: info2 },
+  { title: "Education Umrah", category: "Social Media", image: info3 },
+  { title: "Paket Umroh", category: "Social Media", image: paket },
+
+  { title: "Poster Design 1", category: "Poster", image: poster1 },
+  { title: "Poster Design 2", category: "Poster", image: poster2 },
+  { title: "Poster Design 3", category: "Poster", image: poster3 },
+  { title: "Poster Design 4", category: "Poster", image: poster4 },
+
+  { title: "Logo Concept", category: "Branding", image: logo },
+  { title: "Product Banner", category: "Marketing", image: banner },
+  { title: "YouTube Thumbnail", category: "Content", image: yt },
+
+  { title: "Promo Salon", category: "Marketing", image: promo1 },
 ];
 
 export default function DesignWorks() {
