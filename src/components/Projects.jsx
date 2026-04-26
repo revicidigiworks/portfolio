@@ -1,3 +1,7 @@
+import borneo from "../assets/images/borneo.png";
+import pickleball from "../assets/images/pickleball.png";
+import berkah from "../assets/images/berkahmuarafarm.png";
+
 const projects = [
   {
     title: "Borneo Anfield Stadium Website",
@@ -11,7 +15,7 @@ const projects = [
       "Clear service & booking call-to-action",
       "Responsive design across all devices",
     ],
-    image: "/src/assets/images/borneo.png",
+    image: borneo,
     live: "#",
     github: "#",
   },
@@ -34,7 +38,7 @@ const projects = [
       "REST API integration using Axios",
       "Clean and user-friendly interface",
     ],
-    image: "/src/assets/images/pickleball.png",
+    image: pickleball,
     live: "#",
     github: "#",
   },
@@ -50,7 +54,7 @@ const projects = [
       "Filtering and category navigation setup",
       "Customized layout and UI improvements",
     ],
-    image: "/src/assets/images/berkahmuarafarm.png",
+    image: berkah,
     live: "#",
     github: "#",
   },
