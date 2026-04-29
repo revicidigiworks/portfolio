@@ -134,8 +134,8 @@ export default function Navbar() {
                   <p className="text-white font-semibold tracking-wide">
                     RAFLI TAWIL
                   </p>
-                  <p className="text-[11px] text-gray-400">
-                    Creative Developer
+                  <p className="text-[11px] tracking-[0.1em] text-gray-400">
+                    Digital Solutions
                   </p>
                 </div>
               </a>

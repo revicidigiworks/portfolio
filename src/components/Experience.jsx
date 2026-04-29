@@ -172,8 +172,8 @@ export default function Experience() {
              radial-gradient(circle_at_85%_80%,rgba(236,72,153,0.12),transparent_35%)]"
       />
 
-      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[260px] bg-blue-500/10 blur-3xl" />
-      <div className="absolute bottom-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[260px] bg-pink-500/10 blur-3xl" />
+      <div className="absolute bottom-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[260px] bg-blue-500/10 blur-3xl" />
+      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[260px] bg-pink-500/10 blur-3xl" />
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         {/* HEADING */}

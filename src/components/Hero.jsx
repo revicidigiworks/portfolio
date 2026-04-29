@@ -75,19 +75,19 @@ export default function Hero() {
     {
       icon: <Code2 size={18} />,
       title: "Web Developer",
-      desc: "Modern, scalable & responsive websites.",
+      desc: "Fast, responsive, and modern websites.",
       color: "blue",
     },
     {
       icon: <PenTool size={18} />,
       title: "Graphic Design",
-      desc: "Strong visuals with purpose.",
+      desc: "Clean visuals that actually communicate.",
       color: "pink",
     },
     {
       icon: <Headphones size={18} />,
       title: "IT Support",
-      desc: "Reliable technical solutions.",
+      desc: "Reliable solutions for real problems.",
       color: "purple",
     },
   ];
@@ -96,7 +96,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={sectionRef}
-      className="relative min-h-screen overflow-hidden bg-black text-white pt-36 flex items-center [--x:50%] [--y:50%]"
+      className="relative min-h-screen overflow-hidden bg-black text-white pt-25 flex items-center [--x:50%] [--y:50%]"
     >
       {/* BASE */}
       <div className="absolute inset-0 -z-30 bg-black" />
@@ -129,13 +129,13 @@ export default function Hero() {
             className="order-2 lg:order-1 text-center lg:text-left"
           >
             {/* LABEL */}
-<div className="flex items-center justify-center lg:justify-start gap-3 mb-6 sm:mb-8">
-  <div className="h-[1px] w-10 bg-gradient-to-r from-blue-500 to-transparent" />
+            <div className="flex items-center justify-center lg:justify-start gap-3 mb-6 sm:mb-8">
+              <div className="h-[1px] w-10 bg-gradient-to-r from-blue-500 to-transparent" />
 
-  <span className="text-blue-400 text-[10px] font-bold uppercase tracking-[0.25em]">
-    Halo, Saya
-  </span>
-</div>
+              <span className="text-blue-400 text-[10px] font-bold uppercase tracking-[0.25em]">
+                Halo, Saya
+              </span>
+            </div>
 
             {/* TITLE */}
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] uppercase">
@@ -148,8 +148,7 @@ export default function Hero() {
 
             {/* SUBTEXT */}
             <p className="mt-6 text-gray-400 text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-              I craft premium digital experiences with clean code,
-              high-converting design, and smooth modern interactions.
+              I build fast, responsive websites that help businesses and personal brands look more professional and stand out online.
             </p>
 
             {/* SERVICES */}
@@ -162,13 +161,12 @@ export default function Hero() {
                 >
                   <div
                     className={`w-11 h-11 rounded-xl flex items-center justify-center mb-4
-                    ${
-                      item.color === "blue"
+                    ${item.color === "blue"
                         ? "bg-blue-500/10 text-blue-400"
                         : item.color === "pink"
-                        ? "bg-pink-500/10 text-pink-400"
-                        : "bg-purple-500/10 text-purple-400"
-                    }`}
+                          ? "bg-pink-500/10 text-pink-400"
+                          : "bg-purple-500/10 text-purple-400"
+                      }`}
                   >
                     {item.icon}
                   </div>
@@ -187,7 +185,7 @@ export default function Hero() {
                 href="#projects"
                 className="px-7 h-14 rounded-2xl bg-white text-black font-semibold flex items-center gap-2 hover:scale-105 transition"
               >
-                View Projects
+                See My Projects
                 <ArrowRight size={18} />
               </a>
 
@@ -195,7 +193,7 @@ export default function Hero() {
                 href="#contact"
                 className="px-7 h-14 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-xl flex items-center hover:bg-white/10 transition"
               >
-                Contact Me
+                Start a Project
               </a>
             </div>
           </motion.div>

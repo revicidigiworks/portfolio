@@ -19,16 +19,16 @@ const Icons = {
 };
 
 const contacts = [
-  { label: "Email", value: "your@email.com", href: "mailto:your@email.com", icon: <Icons.Mail /> },
-  { label: "GitHub", value: "github.com/yourusername", href: "https://github.com", icon: <Icons.Github /> },
-  { label: "LinkedIn", value: "linkedin.com/in/yourprofile", href: "https://linkedin.com", icon: <Icons.Linkedin /> },
+  { label: "Email", value: "muhammadrafli.tawil@gmail.com", href: "mailto:muhammadrafli.tawil@gmail.com", icon: <Icons.Mail /> },
+  { label: "GitHub", value: "https://github.com/revicidigiworks", href: "https://github.com", icon: <Icons.Github /> },
+  { label: "LinkedIn", value: "linkedin.com/in/yourprofile", href: "www.linkedin.com/in/muhammad-rafli-tawil-532288367", icon: <Icons.Linkedin /> },
 ];
 
 const socials = [
-  { name: "WhatsApp", href: "#", color: "from-green-400 to-green-600", img: "https://cdn-icons-png.flaticon.com/512/733/733585.png" },
-  { name: "Instagram", href: "#", color: "from-pink-400 to-purple-500", img: "https://cdn-icons-png.flaticon.com/512/2111/2111463.png" },
-  { name: "TikTok", href: "#", color: "from-white/20 to-white/10", img: "https://cdn-icons-png.flaticon.com/512/3046/3046126.png" },
-  { name: "Facebook", href: "#", color: "from-blue-400 to-blue-600", img: "https://cdn-icons-png.flaticon.com/512/733/733547.png" },
+  { name: "WhatsApp", href: "https://wa.me/628139438856", color: "from-green-400 to-green-600", img: "https://cdn-icons-png.flaticon.com/512/733/733585.png" },
+  { name: "Instagram", href: "https://www.instagram.com/rftawil", color: "from-pink-400 to-purple-500", img: "https://cdn-icons-png.flaticon.com/512/2111/2111463.png" },
+  { name: "TikTok", href: "https://www.tiktok.com/@mrapwill", color: "from-white/20 to-white/10", img: "https://cdn-icons-png.flaticon.com/512/3046/3046126.png" },
+  { name: "Facebook", href: "https://www.facebook.com/share/18onVPwVCd/", color: "from-blue-400 to-blue-600", img: "https://cdn-icons-png.flaticon.com/512/733/733547.png" },
 ];
 
 export default function Contact() {
@@ -51,7 +51,7 @@ export default function Contact() {
           className="mb-12 md:mb-16"
         >
           <div className="flex items-center gap-3 mb-5">
-            <div className="h-[1px] w-8 md:w-10 bg-gradient-to-r from-blue-500 to-transparent" />
+            <div className="h-px w-8 md:w-10 bg-linear-to-r from-blue-500 to-transparent" />
             <span className="text-blue-400 text-[9px] md:text-[10px] tracking-[0.35em] uppercase font-bold">
               Contact
             </span>
@@ -59,7 +59,7 @@ export default function Contact() {
 
           <h2 className="text-3xl md:text-5xl font-bold leading-[1.2] tracking-tight">
             Let’s Build Something{" "}
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-500 text-transparent bg-clip-text">
+            <span className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-500 text-transparent bg-clip-text">
               Meaningful
             </span>
           </h2>

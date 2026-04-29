@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 import {
-  Sparkles,
-  ArrowRight,
-  Download,
   Code2,
   Layers3,
   Briefcase,
@@ -26,8 +23,8 @@ const stack = [
 
 const stats = [
   { value: "3+", label: "Years Experience" },
-  { value: "25+", label: "Projects Built" },
-  { value: "100%", label: "UI Focused" },
+  { value: "25+", label: "Web Projects Built" },
+  { value: "500+", label: "Design Assets Created" },
 ];
 
 export default function About() {
@@ -36,15 +33,59 @@ export default function About() {
       id="about"
       className="relative py-40 bg-black text-white overflow-hidden"
     >
-      {/* BACKGROUND */}
-      <div className="absolute inset-0 -z-30 bg-black" />
+      {/* BASE */}
+      <div className="absolute inset-0 -z-50 bg-[#030303]" />
 
-      <div className="absolute top-[-15%] left-[-10%] w-[520px] h-[520px] bg-blue-500/20 blur-[140px] -z-20" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[520px] h-[520px] bg-pink-500/20 blur-[140px] -z-20" />
-      <div className="absolute top-[35%] left-[45%] w-[320px] h-[320px] bg-purple-500/15 blur-[120px] -z-20" />
+      {/* NEW FUTURISTIC BACKGROUND */}
 
-      {/* GRID PATTERN */}
-      <div className="absolute inset-0 opacity-[0.03] -z-10 bg-[linear-gradient(rgba(255,255,255,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.8)_1px,transparent_1px)] bg-[size:46px_46px]" />
+      {/* animated gradient */}
+      <motion.div
+        animate={{
+          scale: [1, 1.15, 1],
+          rotate: [0, 20, 0],
+        }}
+        transition={{
+          duration: 18,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full bg-cyan-500/15 blur-[160px] -z-40"
+      />
+
+      <motion.div
+        animate={{
+          scale: [1.1, 1, 1.1],
+          rotate: [0, -18, 0],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="absolute bottom-[-220px] right-[-220px] w-[760px] h-[760px] rounded-full bg-fuchsia-500/15 blur-[180px] -z-40"
+      />
+
+      <motion.div
+        animate={{
+          y: [0, -40, 0],
+          opacity: [0.15, 0.28, 0.15],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="absolute top-[35%] left-[42%] w-[340px] h-[340px] rounded-full bg-blue-500/15 blur-[130px] -z-40"
+      />
+
+      {/* spotlight */}
+      <div className="absolute inset-0 -z-30 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.04),transparent_55%)]" />
+
+      {/* mesh lines */}
+      <div className="absolute inset-0 -z-20 opacity-[0.03] bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:55px_55px]" />
+
+      {/* noise overlay */}
+      <div className="absolute inset-0 -z-10 opacity-[0.015] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -55,42 +96,39 @@ export default function About() {
             transition={{ duration: 0.9 }}
             viewport={{ once: true }}
           >
-           {/* LABEL */}
-<div className="flex items-center gap-3 mb-6 sm:mb-8">
-  <div className="h-[1px] w-10 bg-gradient-to-r from-blue-500 to-transparent" />
+            <div className="flex items-center gap-3 mb-6 sm:mb-8">
+              <div className="h-[1px] w-10 bg-gradient-to-r from-blue-500 to-transparent" />
 
-  <span className="text-blue-400 text-[10px] font-bold uppercase tracking-[0.25em]">
-    About Me
-  </span>
-</div>
+              <span className="text-blue-400 text-[10px] font-bold uppercase tracking-[0.25em]">
+                About Me
+              </span>
+            </div>
 
-            {/* TITLE */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 leading-tight">
-            Frontend Developer <br />
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-500 text-transparent bg-clip-text">
-              with Design Mindset
-            </span>
-          </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 leading-tight">
+              Frontend Developer <br />
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-500 text-transparent bg-clip-text">
+                with Design Mindset
+              </span>
+            </h2>
 
-            {/* DESC */}
             <div className="mt-8 space-y-5 text-gray-400 text-base md:text-lg leading-relaxed max-w-xl">
               <p className="text-white font-medium">
-                I design and develop modern digital experiences with a strong
-                balance between aesthetics, usability, and performance.
+                I build responsive and user-friendly websites that help
+                businesses and personal brands look more professional online.
               </p>
 
               <p>
-                With a background in graphic design, I understand how visuals
-                influence trust, clarity, and conversion.
+                With a background in graphic design, I bring a strong sense of
+                visual structure, clarity, and consistency into every project I
+                build.
               </p>
 
               <p>
-                My focus is building websites that look expensive, feel smooth,
-                and help brands stand out.
+                My focus is simple: clean code, smooth user experience, and
+                design that actually works — not just looks good.
               </p>
             </div>
 
-            {/* STATS */}
             <div className="grid grid-cols-3 gap-4 mt-10">
               {stats.map((item, i) => (
                 <motion.div
@@ -101,31 +139,9 @@ export default function About() {
                   <h3 className="text-2xl md:text-3xl font-black">
                     {item.value}
                   </h3>
-                  <p className="text-xs text-gray-500 mt-2">
-                    {item.label}
-                  </p>
+                  <p className="text-xs text-gray-500 mt-2">{item.label}</p>
                 </motion.div>
               ))}
-            </div>
-
-            {/* CTA */}
-            <div className="flex flex-wrap gap-4 mt-10">
-              <a
-                href="#contact"
-                className="px-7 h-14 rounded-2xl bg-white text-black font-semibold flex items-center gap-2 hover:scale-105 transition"
-              >
-                Let's Work
-                <ArrowRight size={18} />
-              </a>
-
-              <a
-                href="/cv.pdf"
-                target="_blank"
-                className="px-7 h-14 rounded-2xl border border-white/10 bg-white/[0.03] flex items-center gap-2 hover:bg-white/10 transition"
-              >
-                <Download size={18} />
-                Download CV
-              </a>
             </div>
           </motion.div>
 
@@ -137,20 +153,17 @@ export default function About() {
             viewport={{ once: true }}
             className="relative flex justify-center"
           >
-            {/* GLOW */}
             <div className="absolute w-[380px] h-[380px] bg-gradient-to-br from-cyan-500 via-blue-500 to-fuchsia-500 blur-[100px] opacity-30 rounded-full" />
 
-            {/* MAIN CARD */}
             <div className="relative w-full max-w-md rounded-[32px] p-[1px] bg-gradient-to-br from-white/20 to-white/5">
               <div className="rounded-[32px] bg-[#080808]/95 backdrop-blur-2xl p-7 border border-white/5">
-                {/* HEADER */}
                 <div className="flex items-center justify-between pb-6 border-b border-white/10">
                   <div>
                     <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
                       Profile
                     </p>
                     <h3 className="text-2xl font-bold mt-2">
-                      Muhammad Rafli
+                      Muhammad Rafli Tawil
                     </h3>
                   </div>
 
@@ -159,29 +172,28 @@ export default function About() {
                   </div>
                 </div>
 
-                {/* INFO */}
                 <div className="space-y-5 py-7">
                   {[
                     {
                       icon: <Briefcase size={16} />,
                       label: "Role",
-                      value: "Frontend Developer",
+                      value: "Frontend Developer (UI-Focused)",
                     },
                     {
                       icon: <Layers3 size={16} />,
-                      label: "Focus",
-                      value: "UI / UX Experience",
+                      label: "Specialty",
+                      value: "Clean UI & Responsive Design",
                     },
                     {
                       icon: <Code2 size={16} />,
-                      label: "Stack",
-                      value: "React Ecosystem",
+                      label: "Tech Stack",
+                      value: "React, Next.js, Tailwind",
                     },
                     {
-      icon: <MapPin size={16} />,
-      label: "Location",
-      value: "Kota Balikpapan, Indonesia",
-    },
+                      icon: <MapPin size={16} />,
+                      label: "Location",
+                      value: "Indonesia (Open to Remote Work)",
+                    },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4">
                       <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-cyan-400">
@@ -192,15 +204,12 @@ export default function About() {
                         <p className="text-xs uppercase tracking-widest text-gray-500">
                           {item.label}
                         </p>
-                        <p className="text-gray-200 mt-1">
-                          {item.value}
-                        </p>
+                        <p className="text-gray-200 mt-1">{item.value}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
-                {/* TECH ORBIT */}
                 <div className="pt-6 border-t border-white/10">
                   <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-4">
                     Core Stack
@@ -213,11 +222,7 @@ export default function About() {
                         whileHover={{ y: -4, scale: 1.05 }}
                         className="w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center"
                       >
-                        <img
-                          src={icon}
-                          alt="tech"
-                          className="w-5 h-5"
-                        />
+                        <img src={icon} alt="tech" className="w-5 h-5" />
                       </motion.div>
                     ))}
                   </div>
@@ -227,13 +232,13 @@ export default function About() {
 
             {/* FLOATING BADGES */}
             <div className="absolute -left-4 top-12 px-4 py-3 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-xl hidden md:block">
-              <p className="text-xs text-gray-500">Design Quality</p>
-              <p className="font-bold">High-End</p>
+              <p className="text-xs text-gray-500">Approach</p>
+              <p className="font-bold">Clean & Structured</p>
             </div>
 
             <div className="absolute -right-4 bottom-10 px-4 py-3 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-xl hidden md:block">
-              <p className="text-xs text-gray-500">Delivery</p>
-              <p className="font-bold">Fast & Clean</p>
+              <p className="text-xs text-gray-500">Work Style</p>
+              <p className="font-bold">Reliable & Consistent</p>
             </div>
           </motion.div>
         </div>
