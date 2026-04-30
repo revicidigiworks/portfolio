@@ -20,8 +20,8 @@ const Icons = {
 
 const contacts = [
   { label: "Email", value: "muhammadrafli.tawil@gmail.com", href: "mailto:muhammadrafli.tawil@gmail.com", icon: <Icons.Mail /> },
-  { label: "GitHub", value: "https://github.com/revicidigiworks", href: "https://github.com", icon: <Icons.Github /> },
-  { label: "LinkedIn", value: "linkedin.com/in/yourprofile", href: "www.linkedin.com/in/muhammad-rafli-tawil-532288367", icon: <Icons.Linkedin /> },
+  { label: "GitHub", value: "Revici Digiworks", href: "https://github.com/revicidigiworks/", icon: <Icons.Github /> },
+  { label: "LinkedIn", value: "Muhammad Rafli Tawil", href: "https://www.linkedin.com/in/muhammad-rafli-tawil-532288367", icon: <Icons.Linkedin /> },
 ];
 
 const socials = [
@@ -131,7 +131,7 @@ export default function Contact() {
                 >
                   <img 
                     src={s.img} 
-                    className="w-5 h-5 md:w-6 md:h-6 object-contain opacity-50 group-hover/item:opacity-100 transition-opacity grayscale group-hover/item:grayscale-0" 
+                    className="w-5 h-5 md:w-6 md:h-6 object-contain opacity-50 group-hover/item:opacity-100 transition-opacity  group-hover/item:grayscale-0" 
                     alt={s.name} 
                   />
                 </motion.a>
