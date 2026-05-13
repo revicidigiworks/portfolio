@@ -9,6 +9,9 @@ import kaos4 from "../assets/images/kaos4.png";
 import info1 from "../assets/images/infografis1.png";
 import info2 from "../assets/images/infografis2.png";
 import info3 from "../assets/images/infografis3.png";
+import info4 from "../assets/images/socialmedia.jpg";
+import info5 from "../assets/images/socialmedia2.jpg";
+import info6 from "../assets/images/socialmedia3.jpg";
 
 import paket from "../assets/images/paketumroh.png";
 
@@ -23,15 +26,19 @@ import yt from "../assets/images/design6.png";
 import promo1 from "../assets/images/promo1.png";
 
 const designs = [
+  { title: "Education Umrah", category: "Social Media", image: info4 },
+  { title: "Education Umrah", category: "Social Media", image: info5 },
+  { title: "Promo Umroh", category: "Social Media", image: info6 },
+  { title: "Education Umrah", category: "Social Media", image: info3 },
+  { title: "Info Grafis - Idul Fitri", category: "Social Media", image: info1 },
+  { title: "Promo Umroh", category: "Marketing", image: info2 },
+  { title: "Paket Umroh", category: "Social Media", image: paket },
+  
   { title: "T-Shirt RKKW", category: "Apparel", image: kaos1 },
   { title: "T-Shirt Berkah Muara Farm", category: "Apparel", image: kaos2 },
   { title: "Football Jersey FC LONA", category: "Apparel", image: kaos3 },
   { title: "Football Jersey Concept", category: "Apparel", image: kaos4 },
 
-  { title: "Info Grafis - Idul Fitri", category: "Social Media", image: info1 },
-  { title: "Promo Umroh", category: "Marketing", image: info2 },
-  { title: "Education Umrah", category: "Social Media", image: info3 },
-  { title: "Paket Umroh", category: "Social Media", image: paket },
 
   { title: "Poster Design 1", category: "Poster", image: poster1 },
   { title: "Poster Design 2", category: "Poster", image: poster2 },
